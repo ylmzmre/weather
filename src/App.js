@@ -7,7 +7,7 @@ import Titles from "./components/Title";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 
-const API_KEY = "7d4ef5d23648c7c62acd3ccfa1a0a30b";
+const API_KEY = "b45195ed727049f6a693823d71ef4545";
 
 class App extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class App extends React.Component {
       `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
     );
     const response = await api_call.json();
-
+console.log('tag', response);
     if (city && country) {
       console.log("data", response);
 
