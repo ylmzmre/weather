@@ -32,7 +32,7 @@ class App extends React.Component {
       `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
     );
     const response = await api_call.json();
-console.log('tag', response);
+    console.log('tag', response);
     if (city && country) {
       console.log("data", response);
 
